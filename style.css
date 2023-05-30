@@ -1,4 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .nav_header {
-    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 5px solid #fff;
+    transition: all 500ms ease;
+}
 
+.dots {
+    border: 4px solid #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.dots > div {
+ width: 50px;
+ height: 5px;
+ background-color: #fff;
+ margin-block: 10px;
+ border-radius: 5px;
+
+}
+.nav_header h2{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 2.2rem;
+
+}
+
+.nav_lists {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.nav_lists li {
+    list-style-type: none;
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: #fff;
+    cursor: pointer;
+    transition: all 400ms ease;
+    /* background: #ffffff; */
+
+}
+
+.nav_lists li:hover {
+    padding-left: 1.8rem;
+}
+
+.nav_lists li i {
+    padding-right: 0.5rem;
 }
